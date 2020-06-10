@@ -10,15 +10,33 @@
 
 This repository contains the simulations done using NI Multisim 14.1+. The files are ready to be opened from the said version of the software. Download NI Multisim Education Edition 14.0 using the below-mentioned instructions. It is a full featured software for learning circuit design.
 
-## Clone the git repository
+## Set Up for Simulation
+
+### Clone the git repository
 ```bash
 sudo apt-get install git
 git clone https://github.com/chilloutwithanas/AnasKhan-CrystalOscillatorDesign.git
 ```
 
-## Installation
+### Installation
 
 [Click here](http://sno.filex.no-ip.org/download?file=multisim+program) to download the NI Multisim  into your system.
+
+First install NI multisim from the above mentioned site or from your choice. After steps to draw and run schematic on NI multisim in windows are as follows:
+1) Open NI Multisim 14.1 from start menu
+2) click on Launch Multisim
+3) `File -> New -> Create `
+4) Draw schematic and save(Ctrl +S)
+5) Schematic file will be saved in .ms14 format
+6) To open file whch is already created
+   `File -> Open -> choose schematic file in .ms14 extension` 
+7) Go to` Simulate -> Analyses and simulation` 
+8) Choose required analysis and enter variables and choose parameters to be displayed .
+9) To run 
+   `Simulate -> Run `
+10) Outputs are shown on simulation window.
+11) For spice netlist
+   `Transfer -> Export SPICE Netlist -> Save` (save in .cir extension)
 
 ## Usage
 
@@ -28,6 +46,19 @@ designed from a wide range of well-known topologies. However, not all types of t
 integrated. The crystal oscillator is one of the oscillators which is impossible to integrate into CMOS
 technology.
 
+## Contact Information
+
+- ANAS KHAN 
+ B.Tech Computer Science and Engineering, SRMIST, KTR
+  mailkhananas@gmail.com
+- KUNAL GHOSH 
+ Director, VSD Corp. Pvt. Ltd. 
+  kunalpghosh@gmail.com
+- PHILIPP GÜHRING 
+Software Architect at LibreSilicon Association
+  pg@futureware.at
+ - Dr. GAURAV TRIVEDI 
+ Co-Principal Investigator, EICT Academy, IIT Guwahati
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
