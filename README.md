@@ -11,26 +11,23 @@
 This repository contains the simulations done using NI Multisim 14.1+. The files are ready to be opened from the said version of the software. Download NI Multisim Education Edition 14.0 using the below-mentioned instructions. It is a full featured software for learning circuit design.
 
 ## Step-1: Clone the git repository
-* sudo apt-get install **git**
-* git clone https://github.com/chilloutwithanas/AnasKhan-CrystalOscillatorDesign.git
+```bash
+sudo apt-get install git
+```
+* <h4> git clone https://github.com/chilloutwithanas/AnasKhan-CrystalOscillatorDesign.git </h4>
 
 ## Installation
 
 Click here to download the [NI Multisim](http://sno.filex.no-ip.org/download?file=multisim+program) into your system.
 
-```bash
-pip install foobar
-```
-
 ## Usage
 
-```python
-import foobar
+The oscillator is an
+important block in electronic devices which work on the principle of oscillation. The oscillators can be
+designed from a wide range of well-known topologies. However, not all types of the oscillators can be
+integrated. The crystal oscillator is one of the oscillators which is impossible to integrate into CMOS
+technology.
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
