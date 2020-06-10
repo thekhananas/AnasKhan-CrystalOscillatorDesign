@@ -27,7 +27,7 @@ First install NI multisim from the above mentioned site or from your choice. Aft
 2) click on Launch Multisim
 3) `File -> New -> Open (Ctrl + O) `
 4) Choose the respective `.cir` file and open it.
-5) The reuired circuit will start getting placed in the open area along with connections.
+5) The required circuit will start getting placed in the open area along with connections.
 6) To open file whch is already created
    `File -> Open -> choose schematic file in .ms14 extension` 
 7) Go to` Simulate -> Analyses and simulation` 
