@@ -1,0 +1,33 @@
+** Library name: Thesis_Schematic
+** Cell name: inverter
+** View name: schematic
+.subckt inverter in out vdd vss
+xm1 out in vss vss N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm0 out in vdd vdd 0 P_33_RF wf=15e-6 lf=340e-9 nf=2 m=1
+.ends inverter
+** End of subcircuit definition.
+** Library name: Thesis_Schematic
+** Cell name: Latch
+** View name: schematic
+.subckt Latch d q q1 gnd vdd
+xi6 net038 q vdd gnd inverter
+xi2 q1 net034 vdd gnd inverter
+xm8 net78 net74 gnd gnd N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm7 net038 q1 net78 net78 N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm4 net70 d 0 0 N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm3 net74 net034 net70 net70 N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm6 net038 net034 net96 net96 gnd P_33_RF wf=15e-6 lf=340e-9 nf=2 m=1
+xm5 net96 net74 vdd vdd gnd P_33_RF wf=15e-6 lf=340e-9 nf=2 m=1
+xm2 net74 q1 net87 net87 gnd P_33_RF wf=15e-6 lf=340e-9 nf=2 m=1
+xm1 net87 d vdd vdd gnd P_33_RF wf=15e-6 lf=340e-9 nf=2 m=1
+.ends Latch
+** End of subcircuit definition.
+** Library name: Thesis_Schematic
+** Cell name: freqDivider
+** View name: schematic
+xi4 q q net26 gnd vdd Latch
+xi20 net26 net26 net25 gnd vdd Latch
+xi2 net25 net25 net16 gnd vdd Latch
+xi1 net16 net16 net21 gnd vdd Latch
+xi0 net21 net21 net31 gnd vdd Latch
+xi10 net31 net31 q1 gnd vdd Latch

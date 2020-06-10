@@ -1,0 +1,14 @@
+** Library name: Thesis_Schematic
+** Cell name: inverter
+** View name: schematic
+.subckt inverter in out vdd vss
+xm1 out in vss vss N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm0 out in vdd vdd 0 P_33_RF wf=15e-6 lf=340e-9 nf=2 m=1
+.ends inverter
+** End of subcircuit definition.
+** Library name: Thesis_test_Bench
+** Cell name: inverter
+** View name: schematic
+v4 in 0 PULSE 3.3 0 0 1e-9 1e-9 10e-9 20e-9
+v1 net027 0 DC=3.3
+xi0 in out net027 0 inverter

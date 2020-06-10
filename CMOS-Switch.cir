@@ -1,0 +1,17 @@
+** Library name: Thesis_Schematic
+** Cell name: inverter
+** View name: schematic
+.subckt inverter in out vdd vss
+xm1 out in vss vss N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm0 out in vdd vdd 0 P_33_RF wf=15e-6 lf=340e-9 nf=2 m=1
+.ends inverter
+** End of subcircuit definition.
+** Library name: Thesis_Schematic
+** Cell name: cmos_switch
+** View name: schematic
+xc2 net25 net32 gnd gnd MOMCAPS_RF l=20e-6 nf=10 nm=3 d=500e-9 m=1
+xm4 net32 net54 vn vdd gnd P_33_RF wf=10e-6 lf=300e-9 nf=2 m=1
+xm5 vp net54 net25 vdd gnd P_33_RF wf=10e-6 lf=300e-9 nf=2 m=1
+xm2 net25 vctrl vp gnd N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm3 vn vctrl net32 gnd N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xi0 vctrl net54 vdd gnd inverter

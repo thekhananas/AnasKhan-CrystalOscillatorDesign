@@ -1,0 +1,21 @@
+** Library name: Thesis_Schematic
+** Cell name: LC_Oscillator
+** View name: schematic
+.subckt LC_Oscillator gnd ibias out_n out_p vdd
+i3 vdd out_n PULSE 0 1e-6 0 1e-12 1e-12 1e-9 1
+xl0 out_p out_n 0 0 l_nwsy20k_rfvil od=257e-6 w=3e-6 s=4e-6 nt=5
+xm6 ibias ibias gnd gnd N_33_RF wf=5e-6 lf=700e-9 nf=2 m=1
+xm3 out_p out_n net64 0 N_33_RF wf=5e-6 lf=500e-9 nf=2 m=10
+xm5 net64 ibias gnd gnd N_33_RF wf=5e-6 lf=700e-9 nf=2 m=15
+xm4 out_n out_p net64 0 N_33_RF wf=5e-6 lf=500e-9 nf=2 m=10
+xm1 out_p out_n vdd vdd 0 P_33_RF wf=5e-6 lf=500e-9 nf=2 m=30
+xm2 out_n out_p vdd vdd 0 P_33_RF wf=5e-6 lf=500e-9 nf=2 m=30
+xc1 out_p out_n gnd gnd MOMCAPS_RF l=20e-6 nf=10 nm=3 d=500e-9 m=22
+.ends LC_Oscillator
+** End of subcircuit definition.
+** Library name: Thesis_test_Bench
+** Cell name: LC_Oscillator
+** View name: schematic
+i1 net13 ibias DC=200e-6
+v0 net13 0 DC=3.3
+xi0 0 ibias out_n out_p net13 LC_Oscillator

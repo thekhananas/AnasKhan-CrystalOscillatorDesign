@@ -1,0 +1,20 @@
+** Library name: Thesis_Schematic
+** Cell name: comparator
+** View name: schematic
+.subckt comparator gnd out vdd vinn vinp
+xm0 net28 net20 vdd vdd gnd P_33_RF wf=15e-6 lf=340e-9 nf=2 m=1
+xm1 out net28 vdd vdd gnd P_33_RF wf=15e-6 lf=340e-9 nf=2 m=1
+xm2 net20 net20 vdd vdd gnd P_33_RF wf=15e-6 lf=340e-9 nf=2 m=1
+xm3 net20 vinn net23 gnd N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm4 out net28 gnd gnd N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm5 net28 vinp net23 gnd N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+xm6 net23 net20 gnd gnd N_33_RF wf=5e-6 lf=340e-9 nf=2 m=1
+.ends comparator
+** End of subcircuit definition.
+** Library name: Thesis_test_Bench
+** Cell name: comparator
+** View name: schematic
+xi20 0 out net020 vinn vinp comparator
+v4 vinp 0 PULSE 0 3.3 1e-9 1e-6 1e-6 1e-9 2e-6
+v0 vinn 0 DC=vinn
+v5 net020 0 DC=3.3
