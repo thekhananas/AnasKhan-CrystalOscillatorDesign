@@ -10,7 +10,7 @@
 
 This repository contains the simulations done using NI Multisim 14.1+. The files are ready to be opened from the said version of the software. Download NI Multisim Education Edition 14.0 using the below-mentioned instructions. It is a full featured software for learning circuit design.
 
-## Step-1: Clone the git repository
+## Clone the git repository
 ```bash
 sudo apt-get install git
 git clone https://github.com/chilloutwithanas/AnasKhan-CrystalOscillatorDesign.git
