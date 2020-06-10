@@ -38,6 +38,10 @@ First install NI multisim from the above mentioned site or from your choice. Aft
 11) For spice netlist
    `Transfer -> Export SPICE Netlist -> Save` (save in `.cir` extension)
 
+## Simulation Graph
+<p align="center">
+  <img src="./images/AnasKhan-GraphGithub.jpg" alt="Size Limit CLI" width="450">
+</p>
 
 ## Usage
 
