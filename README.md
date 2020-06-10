@@ -25,9 +25,9 @@ git clone https://github.com/chilloutwithanas/AnasKhan-CrystalOscillatorDesign.g
 First install NI multisim from the above mentioned site or from your choice. After steps to draw and run schematic on NI multisim in windows are as follows:
 1) Open NI Multisim 14.1 from start menu
 2) click on Launch Multisim
-3) `File -> New -> Create `
-4) Draw schematic and save(Ctrl +S)
-5) Schematic file will be saved in .ms14 format
+3) `File -> New -> Open (Ctrl + O) `
+4) Choose the respective `.cir` file and open it.
+5) The reuired circuit will start getting placed in the open area along with connections.
 6) To open file whch is already created
    `File -> Open -> choose schematic file in .ms14 extension` 
 7) Go to` Simulate -> Analyses and simulation` 
@@ -36,7 +36,8 @@ First install NI multisim from the above mentioned site or from your choice. Aft
    `Simulate -> Run `
 10) Outputs are shown on simulation window.
 11) For spice netlist
-   `Transfer -> Export SPICE Netlist -> Save` (save in .cir extension)
+   `Transfer -> Export SPICE Netlist -> Save` (save in `.cir` extension)
+
 
 ## Usage
 
