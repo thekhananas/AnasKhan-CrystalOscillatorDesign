@@ -48,16 +48,16 @@ technology.
 
 ## Contact Information
 
-- Anas Khan 
+- **Anas Khan** 
  B.Tech Computer Science and Engineering, SRMIST, KTR
   mailkhananas@gmail.com
-- Kunal Gosh 
+- **Kunal Gosh** 
  Director, VSD Corp. Pvt. Ltd. 
   kunalpghosh@gmail.com
-- Philipp Gühring 
+- **Philipp Gühring** 
 Software Architect at LibreSilicon Association
   pg@futureware.at
-- Dr. Gaurav Trivedi 
+- **Dr. Gaurav Trivedi** 
  Co-Principal Investigator, EICT Academy, IIT Guwahati
 
 ## Contributing
