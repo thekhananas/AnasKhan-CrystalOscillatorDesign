@@ -15,7 +15,12 @@ This repository contains the simulations done using NI Multisim 14.1+. The files
 ### Clone the git repository
 ```bash
 sudo apt-get install git
+
+```
+
+```bash
 git clone https://github.com/chilloutwithanas/AnasKhan-CrystalOscillatorDesign.git
+
 ```
 
 ### Installation
